@@ -1,0 +1,71 @@
+.Deco{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    row-gap: 0.1rem;
+    column-gap: 0.4rem;
+}
+.AboutMe{
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin:auto;
+    gap: 1.5rem;
+    grid-column: 1 / 11;
+}
+.AboutHeader{
+    font-weight: bold;
+    color: white;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    background-color: #B3849D;
+    border-radius: 0.6rem;
+    box-shadow: #99204A 0.4rem 0.4rem 0.2rem 0.1rem;
+}
+.Objectives{
+    font-size: 0.9rem;
+    background-color: rgba(244, 172, 183, 0.7);
+    padding: 1rem;
+    color: #99204A;
+    border-radius: 1rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    box-shadow: #B3849D 0.2rem 0.2rem 0.5rem 0rem;
+
+}
+.circle4{
+    background-color: rgba(207, 85, 127, 0.6);
+    z-index: 2;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+    grid-column: 10 / 10;
+    grid-row: 3 / 3;
+    box-shadow: #99204A 0.1rem 0.1rem 0.4rem 0.1rem;
+}
+.circle5{
+    background-color: rgba(181, 33, 85, 0.6);
+    box-shadow: #99204A 0.1rem 0rem 0.5rem 0.1rem;
+    z-index: 1;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 10rem;
+    grid-column: 10 / 10;
+    grid-row: 4 / 4;
+}
+.circle6{
+    background-color: rgba(181, 33, 85, 0.6);
+    box-shadow: #99204A 0.1rem 0rem 0.5rem 0rem;
+    z-index: 1;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10rem;
+    grid-column: 1 / 1;
+    grid-row: 10 / 10;
+    transform: translateX(-1.5rem)
+}
