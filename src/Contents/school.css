@@ -1,0 +1,113 @@
+.schoolParent{
+    display: grid;
+    font-family: "Poppins", sans-serif;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows:2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns:1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    gap: 0.2rem;
+}
+.RTU{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows:1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+    grid-template-columns:1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+    gap: 0.3rem; 
+    grid-row: 1 / 6;
+    grid-column: 1 / 6;
+}
+.rizal{
+    width: 3rem;
+    height: 3rem;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+}
+p.tertiary{
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0.1rem;
+    grid-column: 5 / 8;
+    grid-row: 2 / 4;
+    color: #99204A;
+}
+.schoolName{
+    font-weight: bold;
+}
+.schoolYear0{
+    font-style: italic;
+}
+.schoolContainer{
+    font-size: 0.5rem;
+    z-index: -1;
+    width: 7rem;
+    height: auto;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #324A5F;
+    color: white;
+    grid-row: 4 / 6;
+    grid-column: 2 / 8;
+    position: flex;
+    flex-direction: row;
+}
+.AU{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows:1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+    grid-template-columns:1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+    gap: 0.3rem; 
+    grid-row: 3 / 9;
+    grid-column: 8 / 11;
+}
+.arellano{
+    width: 3rem;
+    height: 3rem;
+    grid-row: 2 / 3;
+    grid-column: 6 / 7;
+}
+p.SHS{
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0.1rem;
+    width: auto;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    color: #99204A;
+}
+.schoolName1{
+    font-weight: bold;
+}
+.schoolYear1{
+    font-style: italic;
+}
+.secondary{
+    font-size: 0.5rem;
+    z-index: -1;
+    width: 7rem;
+    height: auto;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #324A5F;
+    color: white;
+    grid-row: 4 / 6;
+    grid-column: 1 / 7;
+    position: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+.divider{
+    height: 15rem;
+    width: 0.3rem;
+    border-radius: 10rem;
+    background-color: #95616A;
+    grid-column: 6 / 6;
+    grid-row: 4 /  5;
+}

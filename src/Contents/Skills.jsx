@@ -1,4 +1,6 @@
-import './skill.css'
+
+import SkillSet from '../Json/skillSet.json'
+import IconLayout from './IconLayout'
 
 
 
@@ -8,7 +10,7 @@ const Skills = () => {
    <>
    <div className='sets'>
         <div>
-            <div></div>
+            <IconLayout datas={SkillSet}/>
         </div>
    </div>
    </>

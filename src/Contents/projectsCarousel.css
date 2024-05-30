@@ -1,0 +1,78 @@
+.ProjectsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    height: 16rem;
+    min-width: 15rem;
+    padding: 0rem 2.5rem 0rem 2.5rem;
+    background-color: #F8C7CD;
+    font-family: "Poppins", sans-serif;
+}
+.Projects{
+    color: #99204A;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 12rem;
+    transition: 0.4s ease-out;
+    position: relative;
+    background-color: #F4ACB7;
+    padding: 0.4rem;
+    padding-top: 0.7rem;
+    border-radius: 1rem;
+    left: 0px;
+    position: relative;
+    border-left: 0.3rem solid rgb(153, 32, 74);
+    gap: 0.2rem;
+}
+.card:not(:first-child) {
+    margin-left: -3rem;
+}
+.card:hover {
+    transform: translateY(-1rem);
+    transition: 0.3s ease-in-out;
+  }
+.card:hover ~ .card {
+    position: relative;
+    left: 3rem;
+    right: 1rem;
+    transition: 0.4s ease-out;
+}
+.Title0, .Title1{
+    color: #99204A;
+    font-weight: bold;
+    line-height: 1rem;
+}
+.Title1{
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+}
+.Links0, .Links1{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    color: #99204A;
+    line-height: 0.6rem;
+}
+a{
+    word-wrap: break-word;
+}
+.Images0, .Images1{
+    background-color: #B3849D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white
+}
+.Image0, .Image1{
+    width: 8rem;
+}

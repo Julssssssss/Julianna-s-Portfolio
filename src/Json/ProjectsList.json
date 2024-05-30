@@ -1,0 +1,14 @@
+[
+    {
+       "Title": "Yokkyuu",
+       "Links": ["Julssssssss/Takoyaki (github.com)"],
+       "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1716622094/Portfolio/takoyaki_kjkq5i.png",
+       "SubTitle": "Ordering System"    
+    },
+    {
+        "Title": "Lost and Found Monitoring system ",
+       "Links": ["https://github.com/Julssssssss/LFMonitoring", "https://www.rtu-lostandfound.online/"],
+       "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1716622094/Portfolio/LF_aqsg1z.png",
+       "SubTitle": "Lost and Found"     
+    }  
+]

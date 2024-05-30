@@ -1,6 +1,24 @@
 [
  {
-    "Name": "Reactjs",
-    "Icon": "https://www.svgrepo.com/show/452092/react.svg"
- }   
+    "Name": "React 75%",
+    "IconName": "https://www.svgrepo.com/show/452092/react.svg"
+ },
+ {
+    "Name": "Tailwind 80%",
+    "IconName": "https://www.svgrepo.com/show/374118/tailwind.svg"
+ },
+ {
+    "Name": "CSS 76%",
+    "IconName": "https://www.svgrepo.com/show/452185/css-3.svg"
+ },
+ {
+    "Name": "HTML 75%",
+    "IconName": "https://www.svgrepo.com/show/452228/html-5.svg"
+ },
+ {
+    "Name": "PHP 75%",
+    "IconName": "https://www.svgrepo.com/show/373966/php.svg"
+ }
+
+
 ]

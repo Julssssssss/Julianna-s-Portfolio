@@ -10,7 +10,119 @@ body{
 .Parent{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   overflow-x:hidden;
 }
+
+.square-icon {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.square-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.square-icon.open {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu{
+ position: absolute;
+ top: 1rem;
+ left: 1rem;
+ width: 10rem;
+ height: 10rem;
+}
+
+.Info{
+  border-radius: 20rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #E2ECE9;
+  border: 0px;
+  box-shadow: #99204A 0rem 0.2rem 0.3rem 0.1rem;
+  animation-name: placement;
+  animation-duration: 0.2s;
+  position: absolute;
+  left: 3.5rem;
+}
+
+  @keyframes placement {
+    from{
+      transform: translateX(-5rem);  
+      opacity: 0;
+    }
+    after{
+      transform: translateX(1rem);
+    }
+  }
+
+.ProjectsList{
+  border-radius: 20rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #E2ECE9;
+  border: 0px;
+  box-shadow: #99204A 0rem 0.2rem 0.3rem 0.1rem;
+  align-items: center;
+  justify-content: center;
+  animation-name: Lists;
+  animation-duration: 0.3s;
+  position: absolute;
+  left: 3rem;
+  top: 3.7rem;
+}
+
+@keyframes Lists{
+  from{
+    transform: translate(10rem 10rem);  
+    opacity: 0;
+  }
+  after{
+    transform: translateY(1rem);
+  }
+}
+
+.Contacts{
+  border-radius: 20rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #E2ECE9;
+  border: 0px;
+  box-shadow: #99204A 0rem 0.2rem 0.3rem 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: listContacts;
+  animation-duration: 0.4s;
+  position: absolute;
+  left: 0rem;
+  top: 6rem;
+}
+
+@keyframes listContacts {
+  from{
+    transform: translateY(-5rem);  
+    opacity: 0;
+  }
+  after{
+    transform: translateY(1rem);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+  
+
