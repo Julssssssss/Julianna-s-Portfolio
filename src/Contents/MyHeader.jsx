@@ -1,9 +1,6 @@
 import './Header.css'
-import { useRef, useState } from 'react'
 
 const MyHeader = () => {
-
-
 
   return (
     <>

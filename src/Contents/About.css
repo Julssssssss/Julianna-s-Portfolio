@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 20rem;
     margin:auto;
     gap: 1.5rem;
     grid-column: 1 / 11;
@@ -36,7 +36,6 @@
     border-radius: 1rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
     box-shadow: #B3849D 0.2rem 0.2rem 0.5rem 0rem;
-
 }
 .circle4{
     background-color: rgba(207, 85, 127, 0.6);
@@ -44,8 +43,8 @@
     width: 3rem;
     height: 3rem;
     border-radius: 10rem;
-    grid-column: 10 / 10;
-    grid-row: 3 / 3;
+    grid-row: 2 / 5;
+    grid-column: 10 / 11;
     box-shadow: #99204A 0.1rem 0.1rem 0.4rem 0.1rem;
 }
 .circle5{
@@ -56,7 +55,7 @@
     height: 1.7rem;
     border-radius: 10rem;
     grid-column: 10 / 10;
-    grid-row: 4 / 4;
+    grid-row: 4 / 5;
 }
 .circle6{
     background-color: rgba(181, 33, 85, 0.6);
@@ -68,4 +67,131 @@
     grid-column: 1 / 1;
     grid-row: 10 / 10;
     transform: translateX(-1.5rem)
+}
+
+@media (min-width: 375px){
+    .Deco{
+        grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+    .AboutMe{
+        grid-column: 1 / 13;
+        max-width: 25rem;
+    }
+    .Objectives{
+        height: 10rem;
+    }
+    .circle4 {
+        grid-column: 12 / 12;
+    }
+    .circle5{
+        grid-column: 12 / 12;
+    }
+}
+@media (min-width: 425px) {
+    .Deco{
+        grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+    .AboutMe{
+        grid-column: 2 / 14;
+        max-width: 25rem;
+    }
+    .circle4 {
+        grid-column: 13 / 14;
+        width: 4rem;
+        height: 4rem;
+    }
+    .circle5{
+        grid-column: 13 / 14;
+    }
+    .circle6{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+@media (min-width: 768px) {
+    .Deco{
+        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+        grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+    .AboutMe{
+        grid-column: 2 / 20;
+        grid-row: 1 / 13;
+        max-width: 30rem;
+    }
+    .AboutHeader{
+        padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+        font-size: 1.3rem;
+    }
+    .Objectives{
+        font-size: 1.2rem;
+        padding: 1.3rem;
+        height: 11rem;
+    }
+    .circle4{
+        grid-column: 19 / 20;
+        width: 6rem;
+        height: 6rem;
+    }
+    .circle5{
+        grid-column: 19 / 20;
+        grid-row: 5 / 6;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .circle6{
+        grid-row: 12 / 12;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .Deco{
+        grid-template-columns: 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem 2.8rem;
+        grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    }
+    .AboutMe {
+        grid-row: 1 / 10;
+        grid-column: 2 / 15;
+    }
+    .AboutHeader {
+        font-size: 1.5rem;
+        padding: 0.4rem 2rem 0.4rem 2rem;
+    }
+    .Objectives{
+        width: 41rem;
+        height: 16rem;
+        padding: 2rem
+    }
+    .circle4{
+        width: 9rem;
+        height: 9rem;
+    }
+    .circle5{
+        width: 5rem;
+        height: 5rem;
+    }
+    .circle6{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+@media (min-width: 1440px) {
+    .Deco{
+        grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+        grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
+    }
+    .AboutMe{
+        grid-column: 3 / 12;
+    }
+    .Objectives{
+        width: 56rem;
+        height: 30rm
+    }
+    .circle4{
+        grid-column: 20 / 20;
+    }
+    .circle5{
+        grid-column: 20 / 20;
+    }
+
 }

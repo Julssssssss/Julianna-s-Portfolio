@@ -29,9 +29,10 @@ const Projects = () => {
   return (
     <>
       <p className='Projects'>Projects</p>
-      <div className='ProjectsContainer'>
-        {projectCard()}
-      </div>
+        <div className='ProjectsContainer'>
+          {projectCard()}
+        </div>
+      
     </> 
   )
 }

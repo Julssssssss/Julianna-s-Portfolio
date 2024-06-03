@@ -76,3 +76,94 @@ a{
 .Image0, .Image1{
     width: 8rem;
 }
+
+@media (min-width: 375px) {
+    .ProjectsContainer{
+        min-width: 20rem;
+    }
+    .card{
+        width: 9rem;
+        height: 12.5rem;
+    }
+    .Links0, .Links1{
+        font-size: 0.6rem;
+    }
+}
+@media (min-width: 425px) {
+    .ProjectsContainer{
+        min-width: 25rem;
+    }
+}
+@media (min-width: 768px) {
+    .ProjectsContainer{
+        min-width: 50rem;
+        height: 20rem;
+    }
+    .card{
+        width: 12rem;
+        height: 16rem;
+        font-size: 1.2rem;
+    }
+    .Title1{
+        font-size: 1rem;
+        line-height: 0.9rem;
+    }
+    .Links0, .Links1{
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+    }
+    .Image0, .Image1{
+        width: 11rem;
+    }
+}
+@media (min-width: 1024px) {
+        .Projects{
+            font-size: 2rem;
+        }
+        .ProjectsContainer{
+            min-width: 1280px;
+            height: 28rem;
+        }
+        .card{
+            width: 17rem;
+            height: 21rem;
+            row-gap: 0.5rem;
+            font-size: 2rem;
+            padding: 1rem
+        }
+        .Title1{
+            font-size: 1.2rem;
+            line-height: 0.9rem;
+        }
+        .Links0, .Links1{
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+        .Image0, .Image1{
+            width: 15rem;
+        }
+}
+@media (min-width: 1440px) {
+    .ProjectsContainer{
+        height: 30rem;
+        min-width: 1440px;
+    }
+    .card{
+        width: 19rem;
+        height: 24rem;
+        row-gap: 0.5rem;
+        font-size: 2rem;
+        padding: 1rem
+    }
+    .Title1{
+        font-size: 1.3rem;
+        line-height: 0.9rem;
+    }
+    .Links0, .Links1{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .Image0, .Image1{
+        width: 17rem;
+    }
+}

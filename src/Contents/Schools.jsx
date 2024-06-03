@@ -23,9 +23,7 @@ const Schools = () => {
                 <p className='schoolYear1'>2018-2020</p>
             </div>
         </div>
-
-        
-   </div>
+    </div>
    </>
   )
 }

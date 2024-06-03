@@ -3,6 +3,9 @@
     width: 101%;
     height: 3rem;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer{
     display: flex;
@@ -16,4 +19,9 @@
     color: white;
     display: flex;
     align-items: center;
+}
+@media (min-width: 1024px) {
+    .footerParent{
+        height: 5rem;
+    }
 }

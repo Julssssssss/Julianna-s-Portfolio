@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0px;
+  padding: 0px;
 }
 body{
   background-color: #FDE2E4;
@@ -10,9 +11,8 @@ body{
 .Parent{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
   overflow-x:hidden;
 }
@@ -20,10 +20,10 @@ body{
 .square-icon {
   width: 3rem;
   height: 3rem;
-  position: absolute;
+  position: fixed;
   left: 1rem;
-  top: 2rem;
-  z-index: 1;
+  top: 1.5rem;
+  z-index: 5;
   cursor: pointer;
 }
 
@@ -38,11 +38,12 @@ body{
 }
 
 .menu{
- position: absolute;
- top: 1rem;
- left: 1rem;
- width: 10rem;
- height: 10rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 8rem;
+  height: 9rem;
+  z-index: 3;
 }
 
 .Info{
@@ -54,8 +55,30 @@ body{
   box-shadow: #99204A 0rem 0.2rem 0.3rem 0.1rem;
   animation-name: placement;
   animation-duration: 0.2s;
-  position: absolute;
-  left: 3.5rem;
+  position: fixed;
+  left: 6rem;
+  cursor: pointer;
+
+}
+button.Info .tooltip{
+  opacity: 0;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+.tooltip{
+  position:absolute;
+  font-family: "Poppins", sans-serif;
+  width: 5rem;
+  color: white;
+  border-radius: 2rem;
+  background-color: #99204A;
+  left: 3.6rem;
+  z-index: 3;
+}
+.Info:hover .tooltip{
+  transition: opacity 1s;
+  visibility: visible;
+  opacity: 1;
 }
 
   @keyframes placement {
@@ -79,10 +102,31 @@ body{
   justify-content: center;
   animation-name: Lists;
   animation-duration: 0.3s;
-  position: absolute;
-  left: 3rem;
-  top: 3.7rem;
+  position: fixed;
+  left: 5rem;
+  top: 5.1rem;
 }
+button.ProjectsList .tooltip1{
+  opacity: 0;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+.tooltip1{
+  position:absolute;
+  font-family: "Poppins", sans-serif;
+  width: 5rem;
+  color: white;
+  border-radius: 2rem;
+  background-color: #99204A;
+  left: 3.6rem;
+  z-index: 3;
+}
+.ProjectsList:hover .tooltip1{
+  transition: opacity 1s;
+  visibility: visible;
+  opacity: 1;
+}
+
 
 @keyframes Lists{
   from{
@@ -106,9 +150,29 @@ body{
   justify-content: center;
   animation-name: listContacts;
   animation-duration: 0.4s;
-  position: absolute;
-  left: 0rem;
-  top: 6rem;
+  position: fixed;
+  left: 1rem;
+  top: 7rem;
+}
+button.Contacts .tooltip2{
+  opacity: 0;
+  transition: opacity 1s;
+  visibility: hidden;
+}
+.tooltip2{
+  position:absolute;
+  font-family: "Poppins", sans-serif;
+  width: 5rem;
+  color: white;
+  border-radius: 2rem;
+  background-color: #99204A;
+  left: 3.6rem;
+  z-index: 3;
+}
+.Contacts:hover .tooltip2{
+  transition: opacity 1s;
+  visibility: visible;
+  opacity: 1;
 }
 
 @keyframes listContacts {
@@ -124,5 +188,33 @@ body{
 ::-webkit-scrollbar {
   width: 0px;
 }
-  
+@media (min-width: 768px) {
+  .Parent{
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  button.Info, button.ProjectsList, button.Contacts{
+    width: 4rem;
+    height: 4rem;
+  }
+  .navIcon{
+    width: 3rem;
+    height: 3rem;
+  }
+  .square-icon{
+    left: 2rem;
+  }
+  .Info{
+    left: 8rem;
+  }
+  .ProjectsList{
+    left: 7.5rem;
+    top: 6.8rem;
+  }
+  .Contacts{
+    top: 9.5rem;
+    left: 2rem;
+  }
+}
 
