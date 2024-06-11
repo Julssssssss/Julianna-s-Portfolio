@@ -21,7 +21,7 @@ body{
   width: 3rem;
   height: 3rem;
   position: fixed;
-  left: 1rem;
+  right: 1rem;
   top: 1.5rem;
   z-index: 5;
   cursor: pointer;
@@ -37,7 +37,7 @@ body{
 .menu{
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   width: 8rem;
   height: 9rem;
   z-index: 3;
@@ -62,7 +62,7 @@ button.Info{
   animation-name: placement;
   animation-duration: 0.2s;
   position: fixed;
-  left: 6rem;
+  right: 6rem;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
@@ -88,7 +88,7 @@ button.Info:hover, button.ProjectsList:hover, button.Contacts:hover{
   color: white;
   border-radius: 2rem;
   background-color: #99204A;
-  left: 4rem;
+  right: 4rem;
   z-index: 3;
 }
 .Info:hover .tooltip{
@@ -120,7 +120,7 @@ button.ProjectsList{
   cursor: pointer;
   animation-duration: 0.3s;
   position: fixed;
-  left: 5rem;
+  right: 5rem;
   top: 5.4rem;
   transition: 0.4s ease-in-out;
 }
@@ -138,7 +138,7 @@ button.ProjectsList .tooltip1{
   color: white;
   border-radius: 2rem;
   background-color: #99204A;
-  left: 4rem;
+  right: 4rem;
   z-index: 3;
 }
 .ProjectsList:hover .tooltip1{
@@ -171,7 +171,7 @@ button.Contacts{
   animation-name: listContacts;
   animation-duration: 0.4s;
   position: fixed;
-  left: 1rem;
+  right: 1rem;
   top: 7.5rem;
   cursor: pointer;
   transition: 0.4s ease-in-out;
@@ -189,7 +189,7 @@ button.Contacts .tooltip2{
   color: white;
   border-radius: 2rem;
   background-color: #99204A;
-  left: 4rem;
+  right: 4rem;
   z-index: 3;
 }
 .Contacts:hover .tooltip2{
@@ -218,27 +218,27 @@ button.Contacts .tooltip2{
 }
 @media (min-width: 1024px) {
   .tooltip{
-    left: 4.5rem;
+    right: 4.5rem;
   }
   .tooltip1{
-    left: 4.5rem;
+    right: 4.5rem;
   }
   .tooltip2{
-    left: 4.5rem;
+    right: 4.5rem;
   }
   button.Info, button.ProjectsList, button.Contacts{
     width: 4rem;
     height: 4rem;
   }
   button.Info{
-    left: 8rem;
+    right: 8rem;
   }
   button.ProjectsList{
     top: 7rem;
-    left: 7.5rem;
+    right: 7.5rem;
   }
   button.Contacts{
-    left: 1.5rem;
+    right: 1.5rem;
     top: 9rem
   }
   .navIcon{
@@ -246,18 +246,18 @@ button.Contacts .tooltip2{
     height: 3rem;
   }
   .square-icon{
-    left: 2rem;
+    right: 2rem;
   }
   .Info{
-    left: 8rem;
+    right: 8rem;
   }
   .ProjectsList{
-    left: 7.5rem;
+    right: 7.5rem;
     top: 6.8rem;
   }
   .Contacts{
     top: 9.5rem;
-    left: 2rem;
+    right: 2rem;
   }
 }
 @media (min-width: 1440px) {
@@ -266,33 +266,33 @@ button.Contacts .tooltip2{
     width: 10rem;
   }
   .tooltip{
-    left: 6rem;
+    right: 6rem;
   }
   .tooltip1{
-    left: 6rem;
+    right: 6rem;
   }
   .tooltip2{
-    left: 6rem;
+    right: 6rem;
   }
   .square-icon{
     width: 4rem;
     height: 4rem;
-    left: 3rem;
+    right: 3rem;
   }
   button.Info, button.ProjectsList, button.Contacts{
     width: 5rem;
     height: 5rem;
   }
   button.ProjectsList{
-    left: 9rem;
+    right: 9rem;
     top: 8rem;
   }
   button.Contacts{
-    left: 2.5rem;
+    right: 2.5rem;
     top: 11rem;
   }
   button.Info{
-    left: 11rem;
+    right: 11rem;
   }
   .navIcon{
     width: 3.7rem;

@@ -17,7 +17,7 @@ const Projects = () => {
           <div className={`Links${index}`}>
             {el.Links.map((link, linkIndex) => (
               <div className='LinkParent' key={linkIndex}>
-                <button className={`ProjectLink${linkIndex}`} onClick={() => window.open(link)}>{link}</button>
+                <button className={`ProjectLink${linkIndex}`} onClick={() => window.open(link)}>Click to visit</button>
               </div>
             ))}
           </div>
