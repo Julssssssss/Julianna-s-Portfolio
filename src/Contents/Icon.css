@@ -11,7 +11,7 @@
 .ParentContainer{
     display: grid;
     grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
-    grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+    grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
     justify-content: center;
     align-items: center;
     column-gap: 0.2rem;
@@ -223,10 +223,90 @@
     border-radius: 10rem;
     color: white;
 }
+.IconContainer5{
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    background-color: white;
+    grid-row: 17 / 18;
+    grid-column: 8 / 9;
+    background-color: #B52155;
+}
+.skillBar5{
+    display: grid;
+    background-color: #E2ECE9;
+    align-items: center;
+    width: 11.6rem;
+    border-radius: 10rem;
+    height: 0.8rem;
+    grid-row: 17 / 18;
+    grid-column: 1 / 9;
+    box-shadow: black 0.1rem 0.1rem 0.5rem 0rem;
+}
+.percent5{
+    background-color: #324A5F;
+    border-radius: 10rem;
+    height: 0.8rem;
+    width: 6.5rem;
+}
+.language5{
+    font-family: "Poppins", sans-serif;
+    width: 7rem;
+    text-align: center;
+    grid-row: 16 / 17;
+    grid-column: 4 / 8;
+    font-size: 0.7rem;
+    background-color: #B3849D;
+    border-radius: 10rem;
+    color: white;
+}
+.IconContainer6{
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    background-color: white;
+    grid-row: 20 / 20;
+    grid-column: 1 / 9;
+    background-color: #B52155;
+}
+.skillBar6{
+    display: grid;
+    background-color: #E2ECE9;
+    align-items: center;
+    width: 11.6rem;
+    border-radius: 10rem;
+    height: 0.8rem;
+    grid-row: 20 / 20;
+    grid-column: 3 / 9;
+    box-shadow: black 0.1rem 0.1rem 0.5rem 0rem;
+}
+.percent6{
+    background-color: #324A5F;
+    border-radius: 10rem;
+    height: 0.8rem;
+    width: 6.5rem;
+}
+.language6{
+    font-family: "Poppins", sans-serif;
+    width: 7rem;
+    text-align: center;
+    grid-row: 19 / 20;
+    grid-column: 4 / 8;
+    font-size: 0.7rem;
+    background-color: #B3849D;
+    border-radius: 10rem;
+    color: white;
+}
 @media (min-width: 425px) {
     .ParentContainer {
         grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
-        grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+        grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
         padding-right:0.5rem;
     }
     .Logos{
@@ -300,11 +380,38 @@
     .percent4{
         width: 12rem;
     }
+    .IconContainer5{
+        width: 3.5rem;
+        height: 3.5rem;
+        grid-column: 10 / 10;
+    }
+    .skillBar5{
+        grid-column: 1 / 4;
+        margin-left: 0.6rem;
+        width: 14rem;
+    }
+    .percent5{
+        width: 12rem;
+    }
+    .IconContainer6{
+        width: 3.5rem;
+        height: 3.5rem;
+        grid-column: 1 / 3;
+    }
+    .skillBar6{
+        grid-column: 3 / 10;
+        margin-left: 0.6rem;
+        width: 14rem;
+    }
+    .percent6{
+        width: 12rem;
+    }
 }
+
 @media (min-width: 768px) {
     .ParentContainer {
         grid-template-columns: 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem;
-        grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+        grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
         padding-right:0.5rem;
         column-gap: 0.1rem;
     }
@@ -329,6 +436,11 @@
     .language1{
         grid-column: 14 / 20;
     }
+    .skillBar2{
+        grid-column: 2 / 9;
+        width: 14rem;
+        margin-left: 1.8rem;
+    }
     .IconContainer3{
         width: 3.5rem;
         height: 3.5rem;
@@ -345,11 +457,31 @@
     .language3{
         grid-column: 14 / 20;
     }
+    .skillBar4{
+        grid-column: 2 / 11;
+        width: 14rem;
+        margin-left: 1.8rem;
+    }
+    .IconContainer5{
+        grid-column: 19 / 20;
+        grid-row: 17 / 18;
+    }
+    .skillBar5{
+        grid-column: 11 / 19;
+        margin-left: 0.2rem;
+    }
+    .language5{
+        grid-column: 14 / 20;
+    }
+    .skillBar6{
+        grid-column: 3 / 15;
+        margin-left: 0rem;
+    }
 }
 @media (min-width: 1024px) {
     .ParentContainer {
         grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
-        grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+        grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
         column-gap: 0.4rem;
     }
     .IconContainer0{
@@ -374,7 +506,6 @@
         width: 4.5rem;
         height: 4.5rem;
         grid-column: 18 / 19;
-
     }
     .skillBar1{
         height: 1.2rem;
@@ -387,6 +518,8 @@
     }
     .language1{
         font-size: 1rem;
+        width: 9.5rem;
+        grid-column: 13 / 19;
     }
     .IconContainer2{
         width: 4.5rem;
@@ -423,6 +556,8 @@
     }
     .language3{
         font-size: 1rem;
+        width: 9.5rem;
+        grid-column: 13 / 15;
     }
     .IconContainer4{
         width: 4.5rem;
@@ -442,62 +577,107 @@
         font-size: 1rem;
         grid-column: 5 / 10;
     }
+    .IconContainer5{
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-column: 18 / 20;
+    }
+    .skillBar5{
+        height: 1.2rem;
+        width: 20rem;
+        grid-column: 8 / 15;
+        margin-left: 3rem;
+    }
+    .percent5{
+        height: 1.2rem;
+    }
+    .language5{
+        font-size: 1rem;
+        grid-column: 14 / 15;
+    }
+    .IconContainer6{
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-column: 2 / 20;
+    }
+    .skillBar6{
+        height: 1.2rem;
+        width: 20rem;
+        grid-column: 3 / 15;
+        margin-left: 3rem;
+    }
+    .percent6{
+        height: 1.2rem;
+    }
+    .language6{
+        font-size: 1rem;
+        grid-column: 5 / 15;
+    }
 }
 @media (min-width: 1440px) {
     .ParentContainer{
         grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
-        grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
+        grid-template-rows: repeat(22, 2.5rem);
     }
     .Logos{
         width: 4.5rem;
         height: 4.5rem;
     }
-    .IconContainer0, .IconContainer1, .IconContainer2, .IconContainer3, .IconContainer4{
+    .IconContainer0, .IconContainer1, .IconContainer2, .IconContainer3, .IconContainer4, .IconContainer5, .IconContainer6{
         width: 5.5rem;
         height: 5.5rem;
     }
-    .language0, .language1, .language2, .language3, .language4, .language5{
+    .language0, .language1, .language2, .language3, .language4, .language5, .language6{
         font-size: 1.5rem;
     } 
-    .skillBar0, .skillBar1, .skillBar2, .skillBar3, .skillBar4{
+    .skillBar0, .skillBar1, .skillBar2, .skillBar3, .skillBar4, .skillBar5, .skillBar6{
         height: 1.7rem;
         width: 25rem;
     }
-    .percent0, .percent1, .percent2, .percent3, .percent4{
+    .percent0, .percent1, .percent2, .percent3, .percent4, .percent5, .percent6{
         height: 1.7rem;
     }
     .IconContainer0, .skillBar0{
-        grid-row: 3 / 4;
+        grid-row: 2 / 2;
     }
-    .language0, .language1, .language2, .language3, .language4{
-        width: 11rem;
+    .language0, .language1, .language2, .language3, .language4, .language5, .language6{
+        width: 15rem;
     }
     .language0{
-         grid-row: 2 / 2;
-         grid-column: 6 / 10;
+         grid-row: 1 / 1;
+         grid-column: 5 / 7;
     }
     .language1{
-        grid-column: 13 / 15;
+        grid-column: 12 / 15;
+       
     }
     .IconContainer2, .skillBar2{
-        grid-row: 7 / 8
+        grid-row: 8 / 8
     }
     .language2{
-        grid-row: 6 / 7;
-        grid-column: 6 / 12;
+        grid-row: 7 / 7;
+        grid-column: 5 / 12;
     }
     .IconContainer3, .skillBar3{
-        grid-row: 9 / 10
+        grid-row: 11 / 11
     }
     .language3{
-        grid-row: 8 / 8;
-        grid-column: 13 / 15;
+        grid-row: 10 / 11;
+        grid-column: 12 / 15;
     }
     .IconContainer4, .skillBar4{
-        grid-row: 11 / 12
+        grid-row: 14 / 14;
     }
     .language4{
-        grid-row: 10 / 11;
-        grid-column: 6 / 12;
+        grid-row: 13 / 13;
+        grid-column: 5 / 12;
+    }
+    .language5{
+        grid-row: 16 / 16;
+        grid-column: 12 / 15;
+
+    }
+    .IconContainer5, .skillBar5{
+        grid-row: 17 / 17;
     }
 }

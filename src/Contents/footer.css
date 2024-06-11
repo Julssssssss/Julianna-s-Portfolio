@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
 }
+.copyrightLogo{
+    width: 2rem;
+    height: 2rem;
+}
 .footer{
     display: flex;
     flex-direction: row;
@@ -23,5 +27,14 @@
 @media (min-width: 1024px) {
     .footerParent{
         height: 5rem;
+    }
+}
+@media (min-width: 1440px) {
+    .copyrightLogo{
+        width: 3rem;
+        height: 3rem;
+    }
+    .MyName{
+        font-size: 1.5rem;
     }
 }

@@ -4,6 +4,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    border-radius: 0.5rem;
 }
 .Header{
     font-family: "Poppins", sans-serif;
@@ -12,8 +13,14 @@
     font-size: 1.2rem;
 }
 svg{
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.divider1{
+    height: 0.4rem;
+    min-width: 2560px;
+    background-color: #B3849D;
+    box-shadow: 0rem 0.1rem 0.4rem 0.1rem #99204A;
 }
 .contactsContainer{
     font-family: "Poppins", sans-serif;
@@ -21,270 +28,296 @@ svg{
     color: #99204A;
     display: grid;
     align-items: center;
+    justify-items: center;
     grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
     grid-template-columns:1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
 }
+button.icon0, button.icon1, button.icon2, button.icon3, button.icon4{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #99204A;
+    font-family: "Poppins", sans-serif;
+    border: 0cap;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.icon0 .contactsTooltip0, button.icon1 .contactsTooltip1, button.icon2 .contactsTooltip2, button.icon3 .contactsTooltip3, button.icon4 .contactsTooltip4{
+    background-color: #99204A;
+    border-radius: 20rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.contactsTooltip0, .contactsTooltip1, .contactsTooltip2, .contactsTooltip3, .contactsTooltip4{
+    position:absolute;
+    border: solid white 0.1rem;
+    color: white;
+    border-radius: 2rem;
+    background-color: #99204A;
+    padding: 0.1rem;
+    width: 3.5rem;
+    font-size: 0.5rem;
+    z-index: 3;
+}
+.contactsTooltip0{
+    left: 0.3rem;
+    top: -1.1rem;
+}
+.contactsTooltip1{
+    left: -0.2rem;
+    top: -1.1rem;
+}
+.contactsTooltip2{
+    width: 4.5rem;
+    left: -0.5rem;
+    top: -1.1rem;
+}
+.contactsTooltip3{
+    left: -0.2rem;
+    top: -1.1rem;
+}
+.contactsTooltip4{
+    left: -0rem;
+    top: -1.1rem;
+}
+button.icon0:hover .contactsTooltip0, button.icon1:hover .contactsTooltip1, button.icon2:hover .contactsTooltip2, button.icon3:hover .contactsTooltip3, button.icon4:hover .contactsTooltip4{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s;
+}
+button.icon0:hover, button.icon1:hover, button.icon2:hover, button.icon3:hover, button.icon4:hover{
+    transform: scale(1.3, 1.3);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0rem 0rem 1rem 0.1rem #324A5F;
+}
+
 .Contacts0{
     display: grid;
-    align-items: center;
-    row-gap: 0.5rem;
-    grid-row: 1 / 5;
-    grid-column: 1 / 2;
-    grid-template-rows: 2rem 2rem 2rem;
-    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
-}
-button.contents0, button.contents1, button.contents2, button.contents3, button.contents4, button.contents5{
-    border-bottom: 0.1rem solid #7D4E57;
-    border-radius: 10rem;
-    padding: 0.1rem;
-    font-size: 0.7rem;
-}
-.icon0, .icon1, .icon2, .icon3, .icon4, .icon5{
-    display: flex;
     justify-items: center;
     align-items: center;
+    grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns:1.5rem 1.5rem 1.5rem;
+    grid-row: 2 / 10;
+    grid-column: 1 / 4;
 }
-.icon0{
-    background-color: #99204A;
-    box-shadow: #99204A 0rem 0rem 0.5rem 0.2rem;
-    border-radius: 10rem;
-    padding: 1rem;
-    height: 2rem;
-    width: 2rem;
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
+.wire0{
+    height: 10rem;
+    width: 0.2rem;
+    grid-column: 2 / 2;
+    grid-row: 1 / 7;
+    background-color: #B3849D;
 }
-.contents0{
-    cursor: pointer;
-    background-color: transparent;
-    border-color: transparent;
-    grid-row: 1 / 2;
-    grid-column: 4 / 13;
-    font-family: "Poppins", sans-serif;
-    color: #99204A;
-}
-.contents0:hover, .contents1:hover, .contents2:hover, .contents3:hover, .contents4:hover, .contents5:hover{
-    background-color: #F8C7CD;
-    border-radius: 10rem;
-    cursor: pointer;
+button.icon0{
+    grid-column: 2 / 3;
+    grid-row: 5 / 10;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 .Contacts1{
     display: grid;
+    justify-items: center;
     align-items: center;
-    row-gap: 0.5rem;
-    grid-row: 1 / 5;
-    grid-column: 1 / 2;
-    grid-template-rows: 2rem 2rem 2rem;
-    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns:1.5rem 1.5rem 1.5rem;
+    grid-row: 2 / 10;
+    grid-column: 4 / 4;
 }
-.icon1{
-    background-color: #CF557F;
-    box-shadow: #99204A 0rem 0rem 0.5rem 0.2rem;
-    border-radius: 10rem;
-    padding: 0.6rem;
-    height: 2rem;
-    width: 2rem;
+.wire1{
+    height: 6rem;
+    width: 0.2rem;
+    grid-column: 2 / 3;
     grid-row: 1 / 5;
-    grid-column: 11 / 11;
+    background-color: #B3849D;
 }
-.contents1{
-    background-color: transparent;
-    border-color: transparent;
-    font-family: "Poppins", sans-serif;
-    color: #99204A;
-    margin-right: 0.4rem;
-    grid-row: 1 / 4;
-    grid-column: 5 / 11;
+button.icon1{
+    grid-column: 2 / 3;
+    grid-row: 2 / 7;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 .Contacts2{
     display: grid;
+    justify-items: center;
     align-items: center;
-    row-gap: 0.5rem;
-    grid-row: 4 / 4;
-    grid-column: 1 / 2;
-    grid-template-rows: 2rem 2rem 2rem;
-    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns:1.5rem 1.5rem 1.5rem;
+    grid-row: 2 / 10;
+    grid-column: 5 / 8;
 }
-.icon2{
-    background-color: #CF557F;
-    box-shadow: #99204A 0rem 0rem 0.5rem 0.2rem;
-    border-radius: 10rem;
-    padding: 0.6rem;
-    height: 2rem;
-    width: 2rem;
-    grid-row: 1 / 3;
-    grid-column: 3 / 10;
+.wire2{
+    height: 16rem;
+    width: 0.2rem;
+    grid-column: 2 / 2;
+    grid-row: 5 / 5;
+    background-color: #B3849D;
 }
-.contents2{
-    background-color: transparent;
-    border-color: transparent;
-    font-family: "Poppins", sans-serif;
-    color: #99204A;
-    margin-left: 0.6rem;
-    grid-row: 1 / 3;
-    grid-column: 5 / 10;
+button.icon2{
+    grid-column: 2 / 3;
+    grid-row: 9 / 10;
+    width: 3.8rem;
+    height: 3.8rem;
 }
 .Contacts3{
     display: grid;
+    justify-items: center;
     align-items: center;
-    row-gap: 0.5rem;
-    grid-row: 5 / 7;
-    grid-column: 1 / 2;
-    grid-template-rows: 2rem 2rem 2rem;
-    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns:1.5rem 1.5rem 1.5rem;
+    grid-row: 2 / 10;
+    grid-column: 8 / 8;
 }
-.icon3{
-    background-color: #99204A;
-    box-shadow: #99204A 0rem 0rem 0.5rem 0.2rem;
-    border-radius: 10rem;
-    padding: 0.6rem;
-    height: 2rem;
-    width: 2rem;
-    grid-row: 1 / 3;
-    grid-column: 1 / 10;
+.wire3{
+    height: 10rem;
+    width: 0.2rem;
+    grid-column: 2 / 2;
+    grid-row: 3 / 5;
+    background-color: #B3849D;
 }
-.contents3{
-    background-color: transparent;
-    border-color: transparent;
-    font-family: "Poppins", sans-serif;
-    color: #99204A;
-    margin-left: 0.6rem;
-    grid-row: 1 / 3;
-    grid-column: 3 / 13;
+button.icon3{
+    grid-column: 2 / 3;
+    grid-row: 3 / 10;
+    width: 3.5rem;
+    height: 3.5rem;
 }
-
 .Contacts4{
     display: grid;
+    justify-items: center;
     align-items: center;
-    row-gap: 0.5rem;
-    grid-row: 7 / 7;
-    grid-column: 1 / 6;
-    grid-template-rows: 2rem 2rem 2rem;
-    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+    grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    grid-template-columns:1.5rem 1.5rem 1.5rem;
+    grid-row: 2 / 10;
+    grid-column: 11 / 12;
 }
-.icon4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #99204A;
-    box-shadow: #99204A 0rem 0rem 0.5rem 0.2rem;
-    border-radius: 10rem;
-    padding: 0.6rem;
-    height: 3rem;
-    width: 3rem;
-    grid-row: 1 / 3;
-    grid-column: 10 / 10;
+.wire4{
+    height: 12rem;
+    width: 0.2rem;
+    grid-column: 2 / 2;
+    grid-row: 4 / 5;
+    background-color: #B3849D;
 }
-.contents4{
-    background-color: transparent;
-    border-color: transparent;
-    font-family: "Poppins", sans-serif;
-    color: #99204A;
-    grid-row: 1 / 3;
-    grid-column: 1 / 10;
-    margin-right: 0.5rem;
+button.icon4{
+    grid-column: 2 / 3;
+    grid-row: 7 / 10;
+    width: 3.9rem;
+    height: 3.9rem;
 }
-.Contacts5{
-    display: grid;
-    align-items: center;
-    row-gap: 0.5rem;
-    grid-row: 8 / 10;
-    grid-column: 1 / 6;
-    grid-template-rows: 2rem 2rem 2rem;
-    grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
-}
-.icon5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #99204A;
-    box-shadow: #99204A 0rem 0rem 0.5rem 0.2rem;
-    border-radius: 10rem;
-    padding: 0.6rem;
-    height: 2.5rem;
-    width: 2.5rem;
-    grid-row: 1 / 3;
-    grid-column: 1 / 1;
-}
-.contents5{
-    background-color: transparent;
-    border-color: transparent;
-    font-family: "Poppins", sans-serif;
-    color: #99204A;
-    grid-row: 1 / 3;
-    margin-left: 0.2rem;
-    grid-column: 3 / 13;
-    padding: 0.1rem
-}
-svg {
-    width: 2rem;
-    height: 2rem;
-}
-
-@media (min-width: 375px) {
+@media (min-width: 425px) {
+    .Contacts0, .Contacts1, .Contacts2, .Contacts3, .Contacts4{
+        grid-template-columns: repeat(3, 2rem);
+    }
     .contactsContainer{
-        grid-template-columns:1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+        grid-template-columns: repeat(12, 2rem);
     }
-    .Contacts1{
-        grid-column: 2 / 6;
+    .wire0, .wire1, .wire2, .wire3, .wire4{
+        width: 0.3rem;
     }
-    .Contacts4{
-        grid-column: 2 / 6;
+    button.icon0{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    button.icon1{
+        width: 4rem;
+        height: 4rem;
+    }
+    button.icon2{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    button.icon3{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    button.icon4{
+        width: 5rem;
+        height: 5rem;
+    }
+    svg{
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+    .contactsTooltip0{
+        left: 0.8rem;
+    }
+    .contactsTooltip1{
+        left: 0.1rem;
+    }
+    .contactsTooltip2{
+        left: -0.2rem;
+    }
+    .contactsTooltip3{
+        left: 0.3rem;
+    }
+    .contactsTooltip4{
+        left: 0.6rem;
     }
 }
 @media (min-width: 768px) {
     .contactsContainer{
-        grid-template-rows:  2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+        grid-template-rows: repeat(13, 2rem);
+        grid-template-columns: repeat(13, 2rem);
     }
-    .contents0, .contents1, .contents2, .contents3, .contents4, .contents5{
-        font-size: 1rem;
+    .Contacts0, .Contacts1, .Contacts2, .Contacts3, .Contacts4{
+        grid-template-columns: repeat(3, 2.5rem);
+        grid-template-rows: repeat(13, 2rem);
+        grid-row: 1 / 14;
     }
-    .Contacts0{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    .wire0{
+        height: 14rem;
+        grid-row: 1 / 9;
     }
-    .contents0{
-        font-size: 1rem;
-        grid-column: 3 / 12;
-        margin-left: 0.5rem;
+    button.icon0{
+        grid-row: 8 / 10;
     }
     .Contacts1{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
-        grid-column: 3 / 10;
+        grid-column: 1 / 9;
     }
-    .icon1{
-        grid-column: 11 / 12;
+    .wire1{
+        height: 8rem;
+        grid-row: 1 / 6;
     }
-    .contents1{
-        grid-column: 5 / 11;
-        margin-right: 0.5rem;
+    button.icon1{
+        grid-row: 2 / 10;
     }
     .Contacts2{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+        grid-column: 5 / 10;
     }
-    .contents2{
-        grid-column: 4 / 9;
-        margin-left: 1.5rem;
+    button.icon2{
+        grid-row: 11 / 15;
+        width: 5rem;
+        height: 5rem;
+    }
+    .wire2{
+        height: 22rem;
+        grid-row: 1 / 13;
     }
     .Contacts3{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+        grid-column: 9 / 11;
     }
-    .contents3{
-        grid-column: 3 / 13;
+    .wire3{
+        height: 14rem;
+        grid-row: 1 / 9;
+    }
+    button.icon3{
+        width: 4.8rem;
+        height: 4.8rem;
+        grid-row: 6 / 10;
     }
     .Contacts4{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
-        grid-column: 4 / 10;
+        grid-column: 12 / 12;
     }
-    .contents4{
-        grid-column: 1 / 10;
+    button.icon4{
+        grid-row: 11 / 11;
     }
-    .Contacts5{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
+    .wire4{
+        height: 18rem;
+        grid-row: 1 / 11;
     }
-    .contents5{
-        grid-column: 3 / 14;
-        margin-left: 1rem;
+    .contactsTooltip2{
+        left: 0.1rem;
     }
 }
 @media (min-width: 1024px) {
@@ -292,92 +325,94 @@ svg {
         font-size: 2rem;
     }
     svg{
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    .contactsContainer{
-        grid-template-rows:  2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
-        grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
-    }
-    .Contacts0{
-        grid-row: 1 / 1;
-    }
-    .contents0{
-        grid-row: 2 / 3;
-        grid-column: 3 / 13;
-    }
-    .icon0{
-        grid-row: 2 / 3;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    .Contacts1{
-        grid-column: 6 / 7;
-    }
-    .icon1{
-        grid-column: 10 / 12;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    .contents1{
-        grid-column: 4 / 10;
-    }
-    .Contacts2{
-        grid-column: 3 / 5;
-        grid-row: 3 / 5;
-    }
-    .icon2{
-        grid-column: 1 / 5;
-        grid-row: 2 / 3;
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-    .contents2{
-        grid-column: 2 / 8;
-        grid-row: 2 / 3;
-    }
-    .icon3{
-        grid-row: 2 / 3;
-        width: 2rem;
-        height: 2rem;
-    }
-    .Contacts3{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
-    }
-    .contents3{
-        grid-row: 2 / 3;
-        grid-column: 1 / 14;
-        margin-left: 4rem;
-    }
-    .Contacts4{
-        grid-column: 6 / 7;
-        grid-row: 4 / 10;
-    }
-    .icon4{
-        grid-row: 2 / 3;
-        grid-column:  10 / 12;
-    }
-    .contents4{
-        grid-row: 2 / 3;
-        grid-column: 1 / 10;
-
-    }
-    .Contacts5{
-        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
-    }
-    .contents5{
-        grid-column: 4 / 20;
-        margin-left: 0rem;
-    }
-    .icon5{
         width: 4rem;
         height: 4rem;
-        margin: 0rem;
+    }
+    .wire0, .wire1, .wire2, .wire3, .wire4{
+        width: 0.5rem;
+    }
+    .contactsContainer{
+        grid-template-rows: repeat(15, 2rem);
+        grid-template-columns: repeat(15, 2.5rem);
+    }
+    .Contacts0, .Contacts1, .Contacts2, .Contacts3, .Contacts4{
+        grid-template-columns: repeat(3, 3rem);
+        grid-template-rows: repeat(15, 2rem);
+        grid-row: 2 / 15;
+    }
+    .wire0{
+        height: 20rem;
+        grid-row: 1 / 12;
+    }
+    button.icon0{
+        grid-row: 10 / 13;
+        width: 8rem;
+        height: 8rem;
+    }
+    .Contacts1{
+        grid-column: 1 / 10;
+    }
+    .wire1{
+        height: 10rem;
+        grid-row: 1 / 7;
+    }
+    button.icon1{
+        width: 5.5rem;
+        height: 5.5rem;
+        grid-row: 1 / 13;
+    }
+    .wire2{
+        height: 24rem;
+        grid-row: 1 / 14;
+    }
+    button.icon2{
+        width: 6.5rem;
+        height: 6.5rem;
+        grid-row: 13 / 15;
+    }
+    button.icon3{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    button.icon4{
+        width: 6rem;
+        height: 6rem;
+        grid-row: 11 / 13;
     }
 
-
-
-    .contents0, .contents1, .contents2, .contents3, .contents4 .contents5{
-        font-size: 1.1rem;
+    .Contacts2{
+        grid-column: 2 / 15;
+    }
+    .Contacts3{
+        grid-column: 8 / 15;
+    }
+    .Contacts4{
+        grid-column: 14 / 15;
+    }
+    .contactsTooltip0, .contactsTooltip1, .contactsTooltip2, .contactsTooltip3, .contactsTooltip4{
+        font-size: 0.7rem;
+        width: 7rem;
+    }
+    .contactsTooltip0{
+        left: 0.2rem;
+        top: -1.5rem
+    }
+    .contactsTooltip1{
+        left: -1rem;
+        top: -1.5rem;
+    }
+    .contactsTooltip2{
+        left: -0.5rem;
+        top: -1.5rem;
+    }
+    .contactsTooltip3{
+        left: -1rem;
+        top: -1.5rem;
+    }
+    .contactsTooltip4{
+        left: -0.7rem;
+        top: -1.5rem;
     }
 }
+
+

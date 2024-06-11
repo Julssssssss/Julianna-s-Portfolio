@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className='circle6'/>
       <div className='AboutMe'>
         <div className='AboutHeader'>About Me</div>
-        <div className='Objectives'>My strong organizational skills, attention to detail, and sociable nature enable me to collaborate effectively and contribute to team success. As I continually enhance my creativity, design knowledge, and professional growth within the organization.</div>
+        <div className='Objectives'>An eager and dedicated IT enthusiast who is committed to lifelong learning and skill improvement. Ready to use technical expertise and problem-solving skills to help new initiatives and work with a progressive team.</div>
       </div>
     </div>
     </>

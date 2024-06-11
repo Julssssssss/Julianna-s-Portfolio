@@ -25,12 +25,9 @@ body{
   top: 1.5rem;
   z-index: 5;
   cursor: pointer;
-}
-
-
-.square-icon {
   transition: transform 0.2s ease-in-out;
 }
+
 
 .square-icon.open {
   transform: rotate(45deg);
@@ -45,9 +42,18 @@ body{
   height: 9rem;
   z-index: 3;
 }
-
-.Info{
+.navIcon{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+button.Info, button.ProjectsList, button.ContactsList{
   border-radius: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.Info{
   width: 3.2rem;
   height: 3.2rem;
   background-color: #E2ECE9;
@@ -58,21 +64,31 @@ body{
   position: fixed;
   left: 6rem;
   cursor: pointer;
-
+  transition: 0.4s ease-in-out;
 }
 button.Info .tooltip{
+  cursor: pointer;
   opacity: 0;
   transition: opacity 1s;
   visibility: hidden;
+  transition: 0.4s ease-in-out;
+
+}
+button.Info:hover, button.ProjectsList:hover, button.Contacts:hover{
+  background-color: #F4ACB7;
+  transition: 0.4s ease-in-out;
+}
+.tooltip, .tooltip1, .tooltip2{
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  width: 6rem;
 }
 .tooltip{
   position:absolute;
-  font-family: "Poppins", sans-serif;
-  width: 5rem;
   color: white;
   border-radius: 2rem;
   background-color: #99204A;
-  left: 3.6rem;
+  left: 4rem;
   z-index: 3;
 }
 .Info:hover .tooltip{
@@ -91,7 +107,7 @@ button.Info .tooltip{
     }
   }
 
-.ProjectsList{
+button.ProjectsList{
   border-radius: 20rem;
   width: 3.2rem;
   height: 3.2rem;
@@ -101,15 +117,19 @@ button.Info .tooltip{
   align-items: center;
   justify-content: center;
   animation-name: Lists;
+  cursor: pointer;
   animation-duration: 0.3s;
   position: fixed;
   left: 5rem;
-  top: 5.1rem;
+  top: 5.4rem;
+  transition: 0.4s ease-in-out;
 }
 button.ProjectsList .tooltip1{
   opacity: 0;
+  cursor: pointer;
   transition: opacity 1s;
   visibility: hidden;
+  transition: 0.4s ease-in-out;
 }
 .tooltip1{
   position:absolute;
@@ -118,7 +138,7 @@ button.ProjectsList .tooltip1{
   color: white;
   border-radius: 2rem;
   background-color: #99204A;
-  left: 3.6rem;
+  left: 4rem;
   z-index: 3;
 }
 .ProjectsList:hover .tooltip1{
@@ -138,7 +158,7 @@ button.ProjectsList .tooltip1{
   }
 }
 
-.Contacts{
+button.Contacts{
   border-radius: 20rem;
   width: 3.2rem;
   height: 3.2rem;
@@ -152,12 +172,15 @@ button.ProjectsList .tooltip1{
   animation-duration: 0.4s;
   position: fixed;
   left: 1rem;
-  top: 7rem;
+  top: 7.5rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
 button.Contacts .tooltip2{
   opacity: 0;
   transition: opacity 1s;
   visibility: hidden;
+  transition: 0.4s ease-in-out;
 }
 .tooltip2{
   position:absolute;
@@ -166,7 +189,7 @@ button.Contacts .tooltip2{
   color: white;
   border-radius: 2rem;
   background-color: #99204A;
-  left: 3.6rem;
+  left: 4rem;
   z-index: 3;
 }
 .Contacts:hover .tooltip2{
@@ -194,9 +217,29 @@ button.Contacts .tooltip2{
   }
 }
 @media (min-width: 1024px) {
+  .tooltip{
+    left: 4.5rem;
+  }
+  .tooltip1{
+    left: 4.5rem;
+  }
+  .tooltip2{
+    left: 4.5rem;
+  }
   button.Info, button.ProjectsList, button.Contacts{
     width: 4rem;
     height: 4rem;
+  }
+  button.Info{
+    left: 8rem;
+  }
+  button.ProjectsList{
+    top: 7rem;
+    left: 7.5rem;
+  }
+  button.Contacts{
+    left: 1.5rem;
+    top: 9rem
   }
   .navIcon{
     width: 3rem;
@@ -215,6 +258,45 @@ button.Contacts .tooltip2{
   .Contacts{
     top: 9.5rem;
     left: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .tooltip, .tooltip1, .tooltip2{
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+  .tooltip{
+    left: 6rem;
+  }
+  .tooltip1{
+    left: 6rem;
+  }
+  .tooltip2{
+    left: 6rem;
+  }
+  .square-icon{
+    width: 4rem;
+    height: 4rem;
+    left: 3rem;
+  }
+  button.Info, button.ProjectsList, button.Contacts{
+    width: 5rem;
+    height: 5rem;
+  }
+  button.ProjectsList{
+    left: 9rem;
+    top: 8rem;
+  }
+  button.Contacts{
+    left: 2.5rem;
+    top: 11rem;
+  }
+  button.Info{
+    left: 11rem;
+  }
+  .navIcon{
+    width: 3.7rem;
+    height: 3.7rem;
   }
 }
 

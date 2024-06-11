@@ -29,6 +29,9 @@
     box-shadow: #99204A 0.4rem 0.4rem 0.2rem 0.1rem;
 }
 .Objectives{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.9rem;
     background-color: rgba(244, 172, 183, 0.7);
     padding: 1rem;
@@ -185,7 +188,8 @@
     }
     .Objectives{
         width: 56rem;
-        height: 30rm
+        height: 20rem;
+        font-size: 2rem;
     }
     .circle4{
         grid-column: 20 / 20;

@@ -14,10 +14,6 @@ const Number = () => {
     <svg fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g data-name="Layer 2" id="Layer_2"> <path d="M24,30H8a2,2,0,0,1-2-2V4A2,2,0,0,1,8,2H24a2,2,0,0,1,2,2V28A2,2,0,0,1,24,30ZM8,4V28H24V4Z"></path> <path d="M18,27H14a1,1,0,0,1,0-2h4a1,1,0,0,1,0,2Z"></path> <path d="M22,24H10a1,1,0,0,1,0-2H22a1,1,0,0,1,0,2Z"></path> </g> </g></svg>
   )
 }
-const Location = () => {
-  return(
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#f7f7f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#f7f7f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>  )
-}
 const GitHub = () => {
   return(
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github</title> <rect width="24" height="24" fill="none"></rect> <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path> </g></svg>  )
@@ -33,28 +29,33 @@ const ListsContacts = () => {
   return [
     {
       svg: Email,
-      contents: "mailto: Gillojuliannaabuyan@gmail.com"
+      tooltipContents: "Email",
+      contents: "Gillojuliannaabuyan@gmail.com"
     },
     {
       svg: Resume,
+      tooltipContents: "Resume",
       contents: "Julianna's Resume"
     },
     {
       svg: Number,
+      tooltipContents: "Contact number",
       contents: "0962-936-2297"
     },
     {
-      svg: Location,
-      contents: "Brgy. Addition Hills Mandaluyong City"
-    },
-    {
       svg: GitHub,
+      tooltipContents: "GitHub",
       contents: "https://github.com/Julssssssss"
     },
     {
       svg: Linkedin,
+      tooltipContents: "LinkedIn",
       contents: "https://www.linkedin.com/in/julianna-gillo-228ab425a"
     }
+
+
+
+    
     
   ]
 }

@@ -11,15 +11,15 @@ const Projects = () => {
           <div className={`Title${index}`}>
             {el.Title}
           </div>
-          <div className={`Links${index}`}>
-            {el.Links.map((link, linkIndex) => (
-              <div key={linkIndex}>
-                <a href={link}>{link}</a>
-              </div>
-            ))}
-          </div>
           <div className={`Images${index}`}>
             <img className={`Image${index}`} src={el.Image} alt={el.Title} />
+          </div>
+          <div className={`Links${index}`}>
+            {el.Links.map((link, linkIndex) => (
+              <div className='LinkParent' key={linkIndex}>
+                <button className={`ProjectLink${linkIndex}`} onClick={() => window.open(link)}>{link}</button>
+              </div>
+            ))}
           </div>
         </div>
       );
