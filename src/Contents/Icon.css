@@ -47,7 +47,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 9rem;
 }
 .language0{
     font-family: "Poppins", sans-serif;
@@ -89,7 +89,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 9rem;
 }
 .language1{
     font-family: "Poppins", sans-serif;
@@ -129,7 +129,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 10rem;
 }
 .language2{
     font-family: "Poppins", sans-serif;
@@ -142,7 +142,6 @@
     border-radius: 10rem;
     color: white;
 }
-
 .IconContainer3{
     width: 3rem;
     height: 3rem;
@@ -170,7 +169,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 8rem;
 }
 .language3{
     font-family: "Poppins", sans-serif;
@@ -210,7 +209,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 9rem;
 }
 .language4{
     font-family: "Poppins", sans-serif;
@@ -250,7 +249,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 10rem;
 }
 .language5{
     font-family: "Poppins", sans-serif;
@@ -290,7 +289,7 @@
     background-color: #324A5F;
     border-radius: 10rem;
     height: 0.8rem;
-    width: 6.5rem;
+    width: 8rem;
 }
 .language6{
     font-family: "Poppins", sans-serif;
@@ -339,7 +338,7 @@
         width: 14rem;
     }
     .percent1{
-        width: 12rem;
+        width: 11rem;
     }
     .IconContainer2{
         width: 3.5rem;
@@ -365,7 +364,7 @@
         width: 14rem;
     }
     .percent3{
-        width: 12rem;
+        width: 10rem;
     }
     .IconContainer4{
         width: 3.5rem;
@@ -378,7 +377,7 @@
         width: 14rem;
     }
     .percent4{
-        width: 12rem;
+        width: 11rem;
     }
     .IconContainer5{
         width: 3.5rem;
@@ -404,7 +403,7 @@
         width: 14rem;
     }
     .percent6{
-        width: 12rem;
+        width: 10rem;
     }
 }
 
@@ -431,7 +430,7 @@
         margin-left: 2rem;
     }
     .percent1{
-        width: 12rem;
+        width: 11rem;
     }
     .language1{
         grid-column: 14 / 20;
@@ -450,9 +449,6 @@
         grid-column: 10 / 11;
         width: 14rem;
         margin-left: 2rem;
-    }
-    .percent3{
-        width: 12rem;
     }
     .language3{
         grid-column: 14 / 20;
@@ -497,6 +493,7 @@
     }
     .percent0{
         height: 1.2rem;
+        width: 15rem;
     }
     .language0{
         font-size: 1rem;
@@ -515,6 +512,7 @@
     }
     .percent1{
         height: 1.2rem;
+        width: 16rem;
     }
     .language1{
         font-size: 1rem;
@@ -534,6 +532,7 @@
     }
     .percent2{
         height: 1.2rem;
+        width: 16.5rem;
     }
     .language2{
         font-size: 1rem;
@@ -553,6 +552,7 @@
     }
     .percent3{
         height: 1.2rem;
+        width: 13rem;
     }
     .language3{
         font-size: 1rem;
@@ -572,6 +572,7 @@
     }
     .percent4{
         height: 1.2rem;
+        width: 15rem;
     }
     .language4{
         font-size: 1rem;
@@ -590,6 +591,7 @@
     }
     .percent5{
         height: 1.2rem;
+        width: 16.5rem;
     }
     .language5{
         font-size: 1rem;
@@ -608,6 +610,7 @@
     }
     .percent6{
         height: 1.2rem;
+        width: 14rem;
     }
     .language6{
         font-size: 1rem;
@@ -679,5 +682,14 @@
     }
     .IconContainer5, .skillBar5{
         grid-row: 17 / 17;
+    }
+    .percent0, .percent1, .percent4{
+        width: 18rem;
+    }
+    .percent2, .percent5{
+        width: 19rem;
+    }
+    .percent3, .percent6{
+        width: 16rem;
     }
 }
