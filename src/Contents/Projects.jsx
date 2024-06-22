@@ -15,11 +15,12 @@ const Projects = () => {
             <img className={`Image${index}`} src={el.Image} alt={el.Title} />
           </div>
           <div className={`Links${index}`}>
-            {el.Links.map((link, linkIndex) => (
-              <div className='LinkParent' key={linkIndex}>
-                <button className={`ProjectLink${linkIndex}`} onClick={() => window.open(link)}>Click to visit</button>
+              <div className='projectHolder'>
+                <div className='desc'>{el.Description}</div>
+                <div className='LinkParent'>
+                  <button className={`ProjectLink${index}`} onClick={() => window.open(el.Links)}>Click to visit</button>
+                </div>
               </div>
-            ))}
           </div>
         </div>
       );

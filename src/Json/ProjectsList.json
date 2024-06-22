@@ -1,13 +1,15 @@
 [
     {
        "Title": "Yokkyuu",
-       "Links": ["https://github.com/Julssssssss/Takoyaki"],
+       "Description":"Yakkyuu ordering system is done through android studio and Java.",
+       "Links": "https://github.com/Julssssssss/Takoyaki",
        "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1716622094/Portfolio/takoyaki_kjkq5i.png",
        "SubTitle": "Ordering System"    
     },
     {
-        "Title": "Lost and Found Monitoring system ",
-       "Links": ["https://github.com/Julssssssss"],
+       "Title": "Lost and Found Monitoring system ",
+       "Description": "Lost and Found Monitoring solution is done through MERN (MongoDb, Expressjs, React, Nodejs) stack and Tailwind CSS.",
+       "Links": "https://github.com/Julssssssss/LFMonitoring",
        "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1716622094/Portfolio/LF_aqsg1z.png",
        "SubTitle": "Lost and Found"     
     }  

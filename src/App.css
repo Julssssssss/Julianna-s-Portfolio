@@ -25,13 +25,11 @@ body{
   top: 1.5rem;
   z-index: 5;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
-
 
 .square-icon.open {
   transform: rotate(45deg);
-  transition: transform 0.3s ease-in-out;
 }
 
 .menu{
@@ -51,6 +49,7 @@ button.Info, button.ProjectsList, button.ContactsList{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 button.Info{
@@ -99,13 +98,14 @@ button.Info:hover, button.ProjectsList:hover, button.Contacts:hover{
 
   @keyframes placement {
     from{
-      transform: translateX(-5rem);  
+      transform: translateX(5rem);  
       opacity: 0;
     }
-    after{
+    before{
       transform: translateX(1rem);
     }
   }
+
 
 button.ProjectsList{
   border-radius: 20rem;
@@ -150,7 +150,7 @@ button.ProjectsList .tooltip1{
 
 @keyframes Lists{
   from{
-    transform: translate(10rem 10rem);  
+    transform: translate(10rem 20rem);  
     opacity: 0;
   }
   after{
