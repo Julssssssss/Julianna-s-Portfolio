@@ -12,5 +12,12 @@
        "Links": "https://github.com/Julssssssss/LFMonitoring",
        "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1716622094/Portfolio/LF_aqsg1z.png",
        "SubTitle": "Lost and Found"     
-    }  
+    },
+    {
+      "Title": "Blissful Bite Cafe",
+      "Description": "A self imposed project to learn about php laravel and mysql)",
+      "Links": "https://github.com/GlenDanielle/Blissful-Bite-Cafe",
+      "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1719417035/Portfolio/Screenshot_2024-06-26_234028_i4hqin.png",
+      "SubTitle": "Blissful Bite Cafe"     
+   }  
 ]

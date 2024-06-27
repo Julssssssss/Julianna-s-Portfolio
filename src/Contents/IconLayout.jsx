@@ -11,9 +11,6 @@ const IconLayout = ({datas}) => {
             <img className='Logos' src={el.IconName} alt={el.Name}/>
         </div>
           <div className={`language${index}`}>{el.Name}</div>
-          <div className={`skillBar${index}`}>
-            <div className={`percent${index}`}></div>
-          </div>
       </div>
         )
       })
@@ -21,6 +18,7 @@ const IconLayout = ({datas}) => {
 
     return (
     <>
+    <div className='SkillTitle'>Skills</div>
       <div className='iconParent'>
         {icons()}
       </div>
