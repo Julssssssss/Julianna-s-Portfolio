@@ -13,7 +13,7 @@ body{
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   overflow-x: hidden;
 }
 .square-icon {
@@ -216,6 +216,10 @@ button.Contacts .tooltip2{
   }
 }
 @media (min-width: 1024px) {
+  .menu{
+    width: 12rem;
+    height: 13rem;
+  }
   .tooltip{
     right: 4.5rem;
   }
@@ -260,6 +264,10 @@ button.Contacts .tooltip2{
   }
 }
 @media (min-width: 1440px) {
+  .menu{
+    height: 15rem;
+    width: 15rem;
+  }
   .tooltip, .tooltip1, .tooltip2{
     font-size: 1.5rem;
     width: 10rem;

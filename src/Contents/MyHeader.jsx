@@ -1,4 +1,5 @@
 import './Header.css'
+import GradPic from "/assets/gradpic.jpg"
 
 const MyHeader = () => {
 
@@ -11,7 +12,7 @@ const MyHeader = () => {
         <div className='circle2'/>
         <div className='circle3'/>
       </div>
-      <img className='Juls' src='https://res.cloudinary.com/dj70ev3dn/image/upload/v1714900989/Portfolio/IMG_20231209_103809_604_1_b1y8df.png' alt='juls'/>
+      <img className='GradPic' src={GradPic} alt='GradPic'/>
     </div>
     </>
   )

@@ -14,6 +14,10 @@ const App = () => {
   const toggleNav = () => {
     setNav(!Nav);
   };
+  const closeNav = () => {
+    setNav(false);
+  };
+  
 
   const headerRef = useRef(null);
   const projectsRef = useRef(null);
@@ -28,20 +32,20 @@ const App = () => {
     <>
       <div className='Parent'>
         
-        <svg onClick={toggleNav} className={`square-icon ${Nav ? 'open' : ''}`} width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg onMouseEnter={toggleNav} className={`square-icon ${Nav ? 'open' : ''}`} width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect className='rect' x="27.3032" width="38.471" height="38.471" rx="5" transform="rotate(45.2108 27.3032 0)" fill="#C9A0B2"/>
           <circle className='circle' cx="27" cy="27" r="9" fill={Nav ? 'white' : '#CB5B80'}/>
         </svg>
         {Nav &&(
-          <div className='menu'>
-            <button className='Info' onClick={() => scrollToSection(headerRef)}>
+          <div className='menu' onMouseLeave={closeNav}>
+            <button className='Info' onClick={() => {scrollToSection(headerRef); closeNav();}}>
               <span className='tooltip'>About me</span>
               <svg className='navIcon' width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5152 0C21.4398 0 23 1.56022 23 3.48485V23.3485C23 23.9259 22.5319 24.3939 21.9545 24.3939H2.09091C2.09091 25.1638 2.715 25.7879 3.48485 25.7879H21.9545C22.5319 25.7879 23 26.256 23 26.8333C23 27.4107 22.5319 27.8788 21.9545 27.8788H3.48485C1.56022 27.8788 0 26.3186 0 24.3939V3.48485C0 1.56022 1.56022 0 3.48485 0H19.5152ZM19.5152 2.09091H3.48485C2.715 2.09091 2.09091 2.715 2.09091 3.48485V22.303H20.9091V3.48485C20.9091 2.715 20.285 2.09091 19.5152 2.09091ZM14.9848 13.2424C15.5141 13.2424 15.9515 13.6357 16.0208 14.146L16.0303 14.2879V14.9842C16.0303 16.3788 14.1022 17.4242 11.5 17.4242C8.99774 17.4242 7.119 16.4577 6.97818 15.1435L6.9697 14.9842V14.2879C6.9697 13.7586 7.36301 13.3212 7.87329 13.252L8.01515 13.2424H14.9848ZM11.5 6.9697C12.8477 6.9697 13.9394 8.05506 13.9394 9.40278C13.9394 10.7505 12.8477 11.843 11.5 11.843C10.1523 11.843 9.06061 10.7505 9.06061 9.40278C9.06061 8.05506 10.1523 6.9697 11.5 6.9697Z" fill="#99204A"/>
               </svg>
             </button>
 
-            <button className='ProjectsList' onClick={() => scrollToSection(projectsRef)}>
+            <button className='ProjectsList' onClick={() => {scrollToSection(projectsRef); closeNav();}}>
               <span className='tooltip1'>Projects</span>
               <svg className='navIcon' width="23" height="32" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.125 0H14.375C13.6125 0 12.8812 0.302901 12.3421 0.842068C11.8029 1.38124 11.5 2.1125 11.5 2.875C11.5 2.1125 11.1971 1.38124 10.6579 0.842068C10.1188 0.302901 9.3875 0 8.625 0H2.875C2.1125 0 1.38123 0.302901 0.842068 0.842068C0.302901 1.38124 0 2.1125 0 2.875V28.75C0 29.5125 0.302901 30.2438 0.842068 30.7829C1.38123 31.3221 2.1125 31.625 2.875 31.625H8.625C9.3875 31.625 10.1188 31.3221 10.6579 30.7829C11.1971 30.2438 11.5 29.5125 11.5 28.75C11.5 29.5125 11.8029 30.2438 12.3421 30.7829C12.8812 31.3221 13.6125 31.625 14.375 31.625H20.125C20.8875 31.625 21.6188 31.3221 22.1579 30.7829C22.6971 30.2438 23 29.5125 23 28.75V2.875C23 2.1125 22.6971 1.38124 22.1579 0.842068C21.6188 0.302901 20.8875 0 20.125 0Z" fill="#99204A"/>
@@ -51,7 +55,7 @@ const App = () => {
               </svg>
             </button>
 
-            <button className='Contacts' onClick={() => scrollToSection(contactsRef)}>
+            <button className='Contacts' onClick={() => {scrollToSection(contactsRef); closeNav();}}>
               <span className='tooltip2'>Contacts</span>
               <svg className='navIcon' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.6665 9.33333V6.66667C6.6665 5.19391 7.86041 4 9.33317 4H17.3332H25.3332C26.806 4 27.9998 5.19391 27.9998 6.66667V9.33333V22.6667V25.3333C27.9998 26.8061 26.806 28 25.3332 28H17.3332H9.33317C7.86041 28 6.6665 26.8061 6.6665 25.3333V22.6667V9.33333Z" stroke="#99204A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

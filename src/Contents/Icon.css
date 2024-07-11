@@ -18,7 +18,7 @@
 .ParentContainer{
     display: grid;
     grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
-    grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+    grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
     justify-content: center;
     align-items: center;
     column-gap: 0.2rem;
@@ -248,7 +248,7 @@
 @media (min-width: 425px) {
     .ParentContainer {
         grid-template-columns: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
-        grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
+        grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
         padding-right:0.5rem;
     }
     .Logos{
@@ -299,24 +299,28 @@
 
 @media (min-width: 768px) {
     .ParentContainer {
-        grid-template-columns:  1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem 1.7rem;
+        grid-template-columns:  2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem 2rem;
         grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
         padding-right:0.5rem;
         column-gap: 0.1rem;
     }
     .language0, .language1, .language2, .language3, .language4, .language5, .language6, .language7, .language8{
         font-size: 1rem;
-        width: 8rem;
+        width: 10rem;
     }
     .language1, .language3, .language5, .language7{
-        margin-left: -1.3rem;
+        margin-left: -1.5rem;
     }
     .language0, .language2, .language4, .language6, .language8{
         grid-column: 3 / 10;
         margin-left: 0.5rem;
     }
-   
-    
+    .IconContainer1, .IconContainer3, .IconContainer5, .IconContainer7{
+        grid-column: 10 / 11;
+        margin-left: 1rem;
+    }
+
+
 }
 @media (min-width: 1024px) {
     .ParentContainer {
@@ -342,7 +346,8 @@
         grid-column: 3 / 10;
     }
     .IconContainer1, .IconContainer3, .IconContainer5, .IconContainer7{
-        grid-column: 17 / 19;
+        grid-column: 16 / 19;
+        margin-left: 2.5rem;
     }
     .language0, .language2, .language4, .language6, .language8{
         grid-column: 5 / 10;
@@ -354,15 +359,15 @@
 @media (min-width: 1440px) {
     .ParentContainer{
         grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
-        grid-template-rows: repeat(22, 2.5rem);
+        grid-template-rows: repeat(20, 2.5rem);
     }
     .Logos{
         width: 4.5rem;
         height: 4.5rem;
     }
     .language0, .language1, .language2, .language3, .language4, .language5, .language6, .language7, .language8, .language9{
-        font-size: 1.5rem;
-        width: 16rem;
+        font-size: 1.8rem;
+        width: 18rem;
     }
     .IconContainer0, .IconContainer1, .IconContainer2, .IconContainer3, .IconContainer4, .IconContainer5, .IconContainer6, .IconContainer7, .IconContainer8{
         width: 5.5rem;
@@ -370,7 +375,7 @@
     }
     .language1, .language3, .language5, .language7{
         grid-column: 12 / 20;
-        margin-left: -2.3rem;
+        margin-left: -4.5rem;
     }
     
 }
