@@ -6,10 +6,23 @@ import Schools from './Contents/Schools';
 import Projects from './Contents/Projects';
 import Contacts from './Contents/Contacts';
 import Footer from './Contents/Footer';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const App = () => {
   const [Nav, setNav] = useState(false);
+
+  useEffect(()=>{
+      const ClickOutside = (event) =>{
+        if(Nav && !event.target.closest('.menu')){
+          closeNav()
+        }
+      }
+     
+      document.addEventListener('mousedown', ClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', ClickOutside);
+      };
+  }, [Nav])
 
   const toggleNav = () => {
     setNav(!Nav);
@@ -37,7 +50,7 @@ const App = () => {
           <circle className='circle' cx="27" cy="27" r="9" fill={Nav ? 'white' : '#CB5B80'}/>
         </svg>
         {Nav &&(
-          <div className='menu' onMouseLeave={closeNav}>
+          <div className='menu'>
             <button className='Info' onClick={() => {scrollToSection(headerRef); closeNav();}}>
               <span className='tooltip'>About me</span>
               <svg className='navIcon' width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">

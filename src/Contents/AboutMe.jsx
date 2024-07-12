@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className='circle6'/>
       <div className='AboutMe'>
         <div className='AboutHeader'>About Me</div>
-        <div className='Objectives'>I am a dedicated professional committed to producing high-quality results and exceeding expectations. I aggressively pursue possibilities for personal and professional growth, driven by a strong desire to learn new things. I am prepared to use my skills efficiently to make a substantial and good difference.</div>
+        <div className='Objectives'>Driven by an intense longing for opportunities and possibilities for personal and professional growth. Leading me to create exceptional work that stands out for its capabilities, resulting in being well suited to leveraging proactive skills and demonstrating a strong commitment to continuous learning.</div>
       </div>
     </div>
     </>
