@@ -333,8 +333,8 @@ button.Info, button.Schools, button.Skills, button.ProjectsList, button.Contacts
   button.Mode{
     width: 2.8rem;
     height: 2.8rem;
-    top: 2.5rem;
-    left: 2rem;
+    top: 2rem;
+    left: 2.5rem;
   }
   .square-icon{
     width: 3rem;
@@ -376,6 +376,25 @@ button.Info, button.Schools, button.Skills, button.ProjectsList, button.Contacts
   .menu{
     height: 15rem;
     width: 15rem;
+  }
+  button.Mode{
+    top: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .Sun{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.1rem;
+  }
+  .Moon{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.1rem;
+  }
+  .Cloud{
+    width: 3.5rem;
+    height: 3rem;
   }
   .square-icon{
     width: 4.5rem;
