@@ -20,6 +20,9 @@ const IconLayout = ({datas}) => {
     <>
     <div className='SkillTitle'>Skills</div>
       <div className='iconParent'>
+        <div className='circle9'/>
+        <div className='circle10'/>
+        <div className='circle11'/>
         {icons()}
       </div>
     </>

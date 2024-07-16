@@ -1,0 +1,20 @@
+:root{
+    --backgroud-color: #FDE2E4;
+    --primary-color: #B52155;
+    --secondary-color: #B3849D;
+    --tertiary-color: #F4ACB7;
+    --container-color: #324A5F;
+    --title-color: #99204A;
+    --accent-color: #6F7887;
+    --shadow-color: #324A5F;
+    --projects-color: #F8C7CD;
+}
+.darkMode{
+    --backgroud-color: #120208;
+    --primary-color: white;
+    --title-color: #F4ACB7;
+    --accent-color: #FDE2E4;
+    --shadow-color: rgba(248, 199, 205, 0.5);
+    --projects-color: rgba(248, 199, 205, 0.5);
+
+}

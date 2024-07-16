@@ -2,13 +2,39 @@
     display: grid; 
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .SkillTitle{
-    color: #99204A;
+    color: var(--title-color);
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     text-align: center;
+}
+.circle9, .circle10, .circle11{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(1rem);
+    z-index: -1;
+    background-color: #CF557F;
+}
+.circle9{
+    width: 4rem;
+    height: 4rem;
+    right: 5rem;
+    bottom: 4rem;
+}
+.circle10{
+    width: 4rem;
+    height: 4rem;
+    right: -2rem;
+    bottom: 6rem;
+}
+.circle11{
+    width: 6rem;
+    height: 6rem;
+    right: -0.5rem;
+    bottom: -2rem;
 }
 .Logos{
     width: 2.5rem;
@@ -303,6 +329,24 @@
         grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem 1rem;
         padding-right:0.5rem;
         column-gap: 0.1rem;
+    }
+    .circle9{
+        width: 5rem;
+        height: 5rem;
+        right: 3rem;
+        bottom: 4rem;
+    }
+    .circle10{
+        width: 5rem;
+        height: 5rem;
+        right: -8rem;
+        bottom: 10rem;
+    }
+    .circle11{
+        width: 8rem;
+        height: 8rem;
+        right: -9rem;
+        bottom: -2rem;
     }
     .language0, .language1, .language2, .language3, .language4, .language5, .language6, .language7, .language8{
         font-size: 1rem;

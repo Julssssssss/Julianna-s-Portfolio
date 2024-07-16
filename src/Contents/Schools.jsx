@@ -3,8 +3,10 @@ import './school.css'
 const Schools = () => {
   return (
    <>
-   <div className='Education'>Education</div>
-   <div className='schoolParent'>
+    <div className='Education'>Education</div>
+    <div className='schoolParent'>
+        <div className='circle7'/>
+        <div className='circle8'/>
         <div className='RTU'>
             <img className='rizal' src='https://res.cloudinary.com/dj70ev3dn/image/upload/v1716352669/Portfolio/rtu_gvadke.png' alt='rtu'/>
             <p className='tertiary'>Tertiary</p>

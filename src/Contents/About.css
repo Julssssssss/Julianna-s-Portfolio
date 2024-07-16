@@ -35,10 +35,13 @@
     font-size: 0.9rem;
     background-color: rgba(244, 172, 183, 0.7);
     padding: 1rem;
-    color: #99204A;
+    color: var(--primary-color);
     border-radius: 1rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
     box-shadow: #B3849D 0.2rem 0.2rem 0.5rem 0rem;
+}
+.circle4, .circle5, .circle6{
+    filter: blur(0.5rem);
 }
 .circle4{
     background-color: rgba(207, 85, 127, 0.6);
