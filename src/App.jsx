@@ -6,7 +6,7 @@ import Schools from './Contents/Schools';
 import Projects from './Contents/Projects';
 import Contacts from './Contents/Contacts';
 import Footer from './Contents/Footer';
-import Images from '../public/assets/Images.jsx';
+import Images from '/public/assets/Images.jsx';
 import { useState, useRef, useEffect } from 'react';
 
 const App = () => {

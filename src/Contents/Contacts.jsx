@@ -1,6 +1,6 @@
 import './contact.css'
 import ListsContacts from './ListsContacts'
-import { useState } from 'react'
+
 
 
 const Contacts = () => {
@@ -10,7 +10,7 @@ const Contacts = () => {
     }
     else if(text.includes("Julianna's")){
       const link = document.createElement('a');
-      link.href = '/assets/Gillo Resume.pdf'; 
+      link.href = '/assets/Gillo_Resume.pdf'; 
       link.download = "Gillo's resume.pdf";
       document.body.appendChild(link);
       link.click();

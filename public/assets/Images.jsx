@@ -1,11 +1,11 @@
-import AboutMe from '../assets/AboutMe.png'
-import Education from '../assets/Education.png'
-import Skills from '../assets/Skills.png'
-import Projects from '../assets/Projects.png'
-import Contacts from '../assets/Contacts.png'
-import Sun from '../assets/sun.png'
-import Moon from '../assets/moon.png'
-import Cloud from '../assets/cloud.png'
+import AboutMe from '/assets/AboutMe.png'
+import Education from '/assets/Education.png'
+import Skills from '/assets/Skills.png'
+import Projects from '/assets/Projects.png'
+import Contacts from '/assets/Contacts.png'
+import Sun from '/assets/sun.png'
+import Moon from '/assets/moon.png'
+import Cloud from '/assets/cloud.png'
 
 const Images = [
     {
