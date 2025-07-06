@@ -10,7 +10,7 @@ const Contacts = () => {
     }
     else if(text.includes("Julianna's")){
       const link = document.createElement('a');
-      link.href = '/assets/Gillo_resume.pdf'; 
+      link.href = '/Gillo_resume.pdf'; 
       link.download = "Gillo_resume.pdf";
       document.body.appendChild(link);
       link.click();
