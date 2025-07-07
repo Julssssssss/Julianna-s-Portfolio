@@ -30,7 +30,7 @@ const ListsContacts = () => {
     {
       svg: Email,
       tooltipContents: "Email",
-      contents: "Gillojuliannaabuyan@gmail.com"
+      contents: "Gillojulianna.a@gmail.com"
     },
     {
       svg: Resume,
