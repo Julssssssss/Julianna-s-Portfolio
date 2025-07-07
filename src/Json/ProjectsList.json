@@ -19,5 +19,12 @@
       "Links": "https://github.com/GlenDanielle/Blissful-Bite-Cafe",
       "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1719417035/Portfolio/Screenshot_2024-06-26_234028_i4hqin.png",
       "SubTitle": "Blissful Bite Cafe"     
-   }  
+   },
+   {
+      "Title": "Whiskered Cafe & Co.",
+      "Description": "An e-commerce website for a fictional cat cafe, built with React, and laravel.",
+      "Links": "https://github.com/GlenDanielle/Blissful-Bite-Cafe",
+      "Image": "https://res.cloudinary.com/dj70ev3dn/image/upload/v1751900436/61522217-b3f7-426c-9e76-4f24ea644056.png",
+      "SubTitle": "Whiskered Cafe & Co."     
+   }
 ]
